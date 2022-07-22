@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check my website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="/b20-modified.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                     <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">TRAVEL</a></li>
+                        <li><a href="">CONTACT</a></li>
+                     </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Stupid Ly is Studying</h1>
+            <p>Ly is learning how to create a website :)</p>
+            <a href="" class="hero-btn">Let's explore this website</a> 
+        </div>
+        </section>
+
+        <section class="things">
+            <h1>Life is beautiful</h1>
+            <p>Love yourself</p>
+            <div class="row">
+                <div class="things-col">
+                    <h3>Stories</h3>
+                    <p>Stories of my life</p>
+                </div>
+
+                <div class="things-col">
+                    <h3>Books</h3>
+                    <p>Let's talk about books</p>
+                </div>
+                    
+                <div class="things-col">
+                    <h3>Movies</h3>
+                    <p>Let's talk about movies</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="travel">
+            <h1>My trips</h1>
+            <p>Travel with me</p>
+
+            <div class="row">
+                <div class="travel-col">
+                    <img src="/kyoto.jpg">
+                    <div class="layer">
+                        <h3>KYOTO</h3>
+                    </div>
+                </div>
+                <div class="travel-col">
+                    <img src="/tokyo1.jpg">
+                    <div class="layer">
+                        <h3>TOKYO</h3>
+                    </div>
+                </div>
+                <div class="travel-col">
+                    <img src="/hiroshima.jpg">
+                    <div class="layer">
+                        <h3>HIROSHIMA</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+         </script>
+    </body>
+    
+</html>
